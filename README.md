@@ -14,22 +14,22 @@ openssl req -config ../conf/openssl.cnf -x509 -sha256 -nodes -days 3650 -newkey 
 ```
 
 check apache configure is valid
-```cd /path/to/Apache2.4/bin
+```
+cd /path/to/Apache2.4/bin
 httpd -t
 Syntax OK
 ```
-
-install service
+## install service
 ```
 httpd -k install
 ```
 
-stop service
+## stop service
 ```
 httpd -k start
 ```
 
-start service
+## start service
 ```
 httpd -k stop
 ```
@@ -60,29 +60,27 @@ Be sure that you have installed the latest C++ Redistributable Visual Studio 201
 
 ### cURL
 https://curl.haxx.se/download.html
-https://bintray.com/vszakats/generic/curl/ ***
+https://bintray.com/vszakats/generic/curl/
 
 ```
 /path/to/Apache2.4/conf
 |
-|   charset.conv
-|   httpd.conf
-|   magic
-|   mime.types
-|   openssl.cnf
+|-- charset.conv
+|-- httpd.conf
+|-- magic
+|-- mime.types
+|-- openssl.cnf
 |   
 +---custom
-|   |   httpd-default.conf
-|   |   httpd-ssl.conf
-|   |   mod_deflate.conf
-|   |   mod_php5.conf
-|   |   mod_proxy_epay.conf
-|   |   security.conf
+|   |-- httpd-default.conf
+|   |-- httpd-ssl.conf
+|   |-- mod_deflate.conf
+|   |-- mod_php5.conf
+|   |-- mod_proxy_epay.conf
+|   |-- security.conf
 |   |   
 |   \---cert
-|           gen-cert.txt
-|           server-sha256-2048.crt
-|           server-sha256-2048.key
+|       |-- gen-cert.txt
 |           
 +---extra
 |       
