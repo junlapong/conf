@@ -24,12 +24,12 @@ Syntax OK
 httpd -k install
 ```
 
-## stop service
+## start service
 ```
 httpd -k start
 ```
 
-## start service
+## stop service
 ```
 httpd -k stop
 ```
