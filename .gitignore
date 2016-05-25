@@ -1,0 +1,9 @@
+extra/
+original/
+charset.conv
+magic
+mime.types
+openssl.cnf
+*.crt
+*.key
+*.con_

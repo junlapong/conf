@@ -1,0 +1,5 @@
+cd D:\Server\Apache2.4\bin
+
+openssl req -config ../conf/openssl.cnf -x509 -sha256 -nodes -days 3650 -newkey rsa:2048 -keyout ../conf/custom/cert/server-sha256-2048.key -out ../conf/custom/cert/server-sha256-2048.crt
+
+openssl req -config ../conf/openssl.cnf -x509 -sha256 -nodes -days 3650 -newkey rsa:4096 -keyout ../conf/custom/cert/server-sha256-4096.key -out ../conf/custom/cert/server-sha256-4096.crt
