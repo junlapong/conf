@@ -6,3 +6,5 @@ mime.types
 *.crt
 *.key
 *.con_
+*.csr
+*.p12
